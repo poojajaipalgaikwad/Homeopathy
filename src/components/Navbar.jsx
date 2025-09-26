@@ -1,7 +1,9 @@
-import React from 'react'
+'use client'
+import React, { useState } from 'react'
 import { assets } from '../../assets/assets'
 import Image from 'next/image'
 const Navbar = () => {
+const [open, setOpen] = useState(false)
   return (
     <>
     <div className=' fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]'>
@@ -28,18 +30,23 @@ const Navbar = () => {
             '>Book Appointment
           </a>
 
-          <button className='block md:hidden ml-3'>
+          <button className='block md:hidden ml-3' onClick={()=> setOpen(true)}>
             <Image src={assets.MenuBlack} alt='' className='w-6'/>
           </button>
         </div>
 
         {/* -----mobile view -----*/}
-        <ul className='flex md:hidden flex-col gap-4 py-20 px-10 fixed right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500'>
-            <li><a className='font-Ovo' href='#top'>Home</a></li>
-            <li><a className='font-Ovo' href='#top'>About Us</a></li>
-            <li><a className='font-Ovo' href='#top'>Services</a></li>
-            <li><a className='font-Ovo' href='#top'>Gallery</a></li>
-            <li><a className='font-Ovo' href='#top'>Contact Us</a></li>
+        <ul  className={`flex md:hidden flex-col gap-4 py-20 px-10 fixed right-0 top-0 bottom-0 w-64 z-50 h-screen
+         bg-rose-50 transition duration-500  ${open ? 'translate-x-0' : 'translate-x-full'}`}>
+            <div className='absolute right-6 top-6' onClick={()=> setOpen(false)}>
+              <Image src={assets.CloseBlack} alt='' className='w-5 cursor-pointer'/>
+            </div>
+            
+            <li><a className='font-Ovo' href='#top' onClick={()=> setOpen(false)}>Home</a></li>
+            <li><a className='font-Ovo' href='#top' onClick={()=> setOpen(false)}>About Us</a></li>
+            <li><a className='font-Ovo' href='#top' onClick={()=> setOpen(false)}>Services</a></li>
+            <li><a className='font-Ovo' href='#top' onClick={()=> setOpen(false)}>Gallery</a></li>
+            <li><a className='font-Ovo' href='#top' onClick={()=> setOpen(false)}>Contact Us</a></li>
         </ul>
 
 
