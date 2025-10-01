@@ -6,7 +6,7 @@ const Navbar = () => {
 const [open, setOpen] = useState(false)
   return (
     <>
-    <div className=' fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]'>
+    <div className=' fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] h-screen'>
       <Image src={assets.HeaderBgColour} alt='' className='w-full'/>
     </div>
     <nav className='w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex justify-between items-center z-50'>
