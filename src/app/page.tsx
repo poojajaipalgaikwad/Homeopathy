@@ -1,7 +1,7 @@
 'use client'
 import { useEffect } from 'react'
-import AOS from 'aos'
-import 'aos/dist/aos.css'
+// import AOS from 'aos'
+// import 'aos/dist/aos.css'
 import Navbar from '@/components/Navbar'
 import Header from '@/components/Header'
 import AboutUsSection from '@/components/AboutUs'
@@ -18,11 +18,11 @@ export default function Home() {
     window.scrollTo({ top: 0, behavior: 'auto' })
 
     // Initialize AOS
-    AOS.init({
-      duration: 1000,
-      once: true,
-      offset: 100,
-    })
+    // AOS.init({
+    //   duration: 1000,
+    //   once: true,
+    //   offset: 100,
+    // })
   }, [])
   return (
     <>
