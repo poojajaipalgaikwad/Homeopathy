@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { ShieldCheckIcon, TargetIcon, DropletIcon, LeafIcon } from 'lucide-react'; 
 import { assets } from '../../assets/assets'
 // --- Component Start ---
-const AboutUsSection = () => {
+const AboutUsSection = ({ id }) => {
     // --- Responsive Image Setup ---
     // Ensure your founder photo is in the public directory and the path is correct
 
@@ -27,8 +27,8 @@ const AboutUsSection = () => {
     ];
 
     return (
-        <section className="bg-gray-50 py-12 md:py-20 lg:py-24"> 
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section id={id}  className="bg-gray-50 py-12 md:py-20 lg:py-24"> 
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" >
                 
                 {/* --- Header / Logo Section (Responsive Centering) --- */}
                 <div className="text-center mb-10 md:mb-16">

@@ -66,10 +66,10 @@ const swiperBreakpoints = {
 };
 
 // --- Component Start ---
-const ServicesSection = () => {
+const ServicesSection = ({ id }) => {
 
     return (
-        <section className="bg-gray-50 py-12 md:py-20">
+        <section id={id} className="bg-gray-50 py-12 md:py-20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-white p-6 md:p-10 shadow-lg rounded-xl">
                 
                 {/* --- Header & Hero Section --- */}
