@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { assets } from '../../assets/assets'
-const Header = () => {
+const Header = ({ id }) => {
   // Icons are simple SVG components for "Natural", "Gentle", "Effective"
 const IconCheckCircle = () => (
   <svg className="w-6 h-6 text-green-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -26,19 +26,19 @@ const featureList = [
 ];
 
   return (
-    <section className=" min-h-screen flex items-center 
+    <section id={id}  className=" min-h-screen flex items-center 
                         pt-28 pb-10 md:pt-40 md:pb-20 overflow-hidden mx-auto -z-0"> 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between">
 
           {/* Left Content Column (Code remains the same) */}
-          <div className="w-full md:w-1/2 lg:w-5/12 text-center md:text-left relative py-8 md:py-0">
+          <div className="w-full md:w-1/2 lg:w-5/12 text-center md:text-left relative py-8 md:py-0" data-aos="fade-left">
             {/* Background Pattern (Hexagons) */}
             <div className="absolute inset-0 z-0 opacity-10 hidden sm:block">
               <div className="absolute -top-10 -left-10 w-96 h-96" style={{backgroundImage: 'url("data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'100\' height=\'100\' viewBox=\'0 0 100 100\'%3E%3Cpath fill=\'none\' stroke=\'rgb(20, 83, 45)\' stroke-width=\'1\' d=\'M50 0 L100 25 L100 75 L50 100 L0 75 L0 25 Z\'/%3E%3C/svg%3E")', backgroundSize: '100px'}}></div>
             </div>
 
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif text-green-900 leading-tight mb-4 relative z-10">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif text-green-900 leading-tight mb-4 relative z-10" >
               Struggling with Women's Health? <br className="hidden sm:inline" />Find Holistic Answers Here
             </h1>
             <p className="text-lg text-gray-600 mb-8 max-w-md mx-auto md:mx-0 relative z-10">
@@ -74,7 +74,7 @@ const featureList = [
           </div>
 
           {/* Right Image Column (Code remains the same) */}
-          <div className="w-full md:w-1/2 lg:w-6/12 mt-12 md:mt-0 flex justify-center md:justify-end">
+          <div className="w-full md:w-1/2 lg:w-6/12 mt-12 md:mt-0 flex justify-center md:justify-end" >
             <div className="relative w-full max-w-xs sm:max-w-lg lg:max-w-none h-auto md:h-[550px]">
               <div 
                    className="w-full h-full bg-gray-100 rounded-2xl shadow-2xl overflow-hidden" 
