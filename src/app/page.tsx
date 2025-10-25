@@ -11,7 +11,7 @@ import Footer from '@/components/Footer'
 import StatsCounter from '@/components/StatsCounter'
 import WhyChooseUs from '@/components/WhyChooseUs'
 import Gallery from '@/components/Gallery'
-
+import OurApproach from '@/components/OurApproach'
 export default function Home() {
   useEffect(() => {
     // Scroll to top on page load
@@ -32,7 +32,7 @@ export default function Home() {
       <ServicesSection id="services" />
       <Testimonial id="testimonial" />
       <StatsCounter id="stats" />
-      <WhyChooseUs id="whychooseus" />
+      <OurApproach id = "ourapproach"/>
       <Gallery id="gallery" />
       <Footer id="footer" />
     </>

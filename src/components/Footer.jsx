@@ -16,7 +16,7 @@ export default function Footer({ id }) {
         <div>
           <div className="flex items-center mb-3">
             <Image
-              src={assets.Logo}// 🧠 Replace with your logo path
+              src={assets.Logo}
               alt="Homeopathy Logo"
               width={80}
               height={80}
@@ -76,12 +76,12 @@ export default function Footer({ id }) {
                 href="tel:+919876543210"
                 className="hover:text-green-500 transition"
               >
-                +91 98765 43210
+                95037 68159
               </a>
             </li>
             <li>
               <strong className="font-medium text-gray-800">Address:</strong>{" "}
-              Pune, Maharashtra, India
+              Shubharambh chs.LTD, Plot no 8, Sector 8A, Airoli, Navi Mumbai, Maharashtra 400701
             </li>
           </ul>
         </div>
