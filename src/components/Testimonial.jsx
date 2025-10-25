@@ -48,11 +48,8 @@ export default function Testimonial({ id }) {
           Testimonials{" "}
           <span className="inline-block bg-green-400 w-40 h-1 ml-2 align-middle"></span>
         </h2>
-        <p className="text-sm md:text-base max-w-2xl mx-auto text-gray-500">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat nemo
-          exercitationem rerum velit facilis, dignissimos, dicta illum neque
-          praesentium assumenda harum voluptatum deserunt incidunt corrupti
-          omnis libero quam asperiores laudantium.
+        <p className="text-xl md:text-base max-w-2xl mx-auto text-gray-500">
+🌿 From chronic pain to renewed comfort — our patients share their healing journeys. 💙 Their words inspire us to continue delivering care with empathy and excellence.
         </p>
       </div>
 
@@ -87,9 +84,9 @@ export default function Testimonial({ id }) {
                 <h3 className="text-lg font-semibold text-gray-800 text-center">
                   {tm.name}
                 </h3>
-                <small className="text-green-700 font-medium text-sm text-center">
+                {/* <small className="text-green-700 font-medium text-sm text-center">
                   {tm.location}
-                </small>
+                </small> */}
               </div>
             </aside>
           ))}
