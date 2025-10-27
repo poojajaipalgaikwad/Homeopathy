@@ -8,7 +8,7 @@ import {
   LeafIcon,
 } from "lucide-react";
 import { assets } from "../../assets/assets";
-
+import Link from 'next/link' // ✅ Added Link for navigation
 const AboutUsSection = ({ id }) => {
   const pillars = [
     {
@@ -74,12 +74,12 @@ const AboutUsSection = ({ id }) => {
               care.
             </p>
             <div className="mt-6">
-              <a
+               <Link
                 href="/contact"
                 className="px-6 py-2 bg-green-600 text-white rounded-full font-semibold text-sm hover:bg-green-700 shadow-md transition-all"
               >
                 Book Appointment
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -141,12 +141,12 @@ const AboutUsSection = ({ id }) => {
 
         {/* CTA */}
         <div className="text-center mt-16">
-          <a
+           <Link
             href="/contact"
             className="inline-block px-8 py-3 bg-green-600 text-white font-semibold rounded-full shadow-lg hover:bg-green-700 transition duration-300 transform hover:scale-105 text-sm sm:text-base"
           >
             Book Your Free Consultation
-          </a>
+          </Link>
           <div className="mt-4 text-xs text-gray-500 space-x-4">
             <span>✅ Confidential & Trusted</span>
             <span>✅ Online & In-Clinic Options</span>

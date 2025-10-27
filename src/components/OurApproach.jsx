@@ -49,7 +49,7 @@ export default function OurApproach({ id }) {
     >
       {/* Decorative Background */}
       <div className="absolute -top-40 -left-40 w-[600px] h-[600px] bg-green-200 rounded-full opacity-20 blur-3xl animate-pulse mix-blend-multiply"></div>
-      <div className="absolute -bottom-40 -right-40 w-[600px] h-[600px] bg-yellow-200 rounded-full opacity-20 blur-3xl blur-2xl animate-pulse mix-blend-multiply"></div>
+      <div className="absolute -bottom-40 -right-40 w-[600px] h-[600px] bg-yellow-200 rounded-full opacity-20 blur-3xl animate-pulse mix-blend-multiply"></div>
 
       {/* Section Content */}
       <div className="max-w-7xl mx-auto px-6 md:px-10 text-center relative z-10">
