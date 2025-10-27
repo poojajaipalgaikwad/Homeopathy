@@ -8,7 +8,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 import { CircleCheck } from 'lucide-react';
-
+import Link from 'next/link'
 // --- Updated Services from Clinic Poster ---
 const services = [
   {
@@ -165,12 +165,12 @@ const ServicesSection = ({ id }) => {
             </p>
           </div>
 
-          <a
-            href="/consultation"
+           <Link
+            href="/contact"
             className="inline-block px-8 py-3 bg-green-700 text-white font-semibold rounded-full shadow-lg hover:bg-green-800 transition duration-300 transform hover:scale-105 text-base"
           >
             Book Your Free Consultation 🌿
-          </a>
+          </Link>
         </div>
       </div>
     </section>

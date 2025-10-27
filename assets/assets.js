@@ -26,6 +26,7 @@ import PsychiatricDisorders from './Psychiatric Disorders.png'
 import RoutineMedicalCheckup from './Routine Medical Checkup.png'
 import HealthCareServices from './Health Care Services.png'
 import OnlineConsultation from './Online Consultation.png'
+import Clinic from './clinic.jpg'
 export const assets = {
     PsychiatricDisorders : PsychiatricDisorders,
     RoutineMedicalCheckup : RoutineMedicalCheckup,
@@ -55,5 +56,5 @@ export const assets = {
     kidneyDiseases : kidneyDiseases,
     cancerSupport : cancerSupport,
     gastricDisorders : gastricDisorders,
-
+    clinic : Clinic
 }
