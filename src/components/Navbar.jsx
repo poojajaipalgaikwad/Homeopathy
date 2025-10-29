@@ -7,7 +7,7 @@ import Link from 'next/link' // ✅ Added Link for navigation
 const navItems = [
   { name: 'Home', href: 'home' },
   { name: 'About Us', href: 'about' },
-  { name: 'Services', href: 'services' },
+  { name: 'Treatments', href: 'services' },
   { name: 'Gallery', href: 'gallery' },
   { name: 'Contact Us', href: '/contact' }, // ✅ now this links to page
 ]

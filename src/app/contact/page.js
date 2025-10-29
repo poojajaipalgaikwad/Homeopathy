@@ -191,8 +191,8 @@ export default function ContactForm() {
             </p>
             <p className="flex items-center gap-3">
               <FaEnvelope className="text-green-600 text-xl" />
-              <a href="mailto:info@yourclinic.com" className="hover:underline">
-                info@yourclinic.com
+              <a href="prachimahulkar08@gmail.com" className="hover:underline">
+                prachimahulkar08@gmail.com
               </a>
             </p>
           </div>
