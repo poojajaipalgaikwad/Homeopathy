@@ -1,7 +1,15 @@
 import React from 'react'
 import Image from 'next/image'
 import { assets } from '../../assets/assets'
+import Link from 'next/link' 
 const Header = ({ id }) => {
+  const ScrollTosection = (id) =>{
+    const section = document.getElementById(id);
+    if(section)
+    {
+      section.scrollIntoView({behavior: 'smooth', block: 'start'})
+    }
+  }
   // Icons are simple SVG components for "Natural", "Gentle", "Effective"
 const IconCheckCircle = () => (
   <svg className="w-6 h-6 text-green-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -57,19 +65,19 @@ const featureList = [
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-6 relative z-10">
-              <a 
+              <Link 
                 href="/discover" 
                 className="inline-block px-8 py-3 text-white font-semibold rounded-full shadow-lg transition-transform duration-300 transform hover:scale-105"
                 style={{ background: 'linear-gradient(135deg, #7db959, #38761d)' }}
               >
                 Discover Your Path to Wellness
-              </a>
-              <a 
-                href="/about" 
+              </Link>
+              <button 
+                onClick={() => ScrollTosection("ourapproach")} 
                 className="text-green-700 font-medium hover:text-green-900 transition-colors"
               >
                 Learn About Our Approach
-              </a>
+              </button>
             </div>
           </div>
 

@@ -5,6 +5,12 @@ import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
 import Link from "next/link";
 
 export default function Footer({ id }) {
+  const ScrollToSection = (id) =>{
+    const section = document.getElementById(id)
+    if(section){
+      section.scrollIntoView({ behavior : "smooth", block : "start" })
+    }
+  }
   return (
     <footer id={id}  className="relative bg-gradient-to-b from-white to-green-50 text-gray-700 font-[Inter]">
       {/* Top Accent Line */}
@@ -39,15 +45,15 @@ export default function Footer({ id }) {
             <span className="absolute -bottom-1 left-0 w-10 h-0.5 bg-green-400 rounded"></span>
           </h4>
           <ul className="space-y-2 text-sm text-gray-600">
-            {["Home", "About Us", "Treatments", "Gallery", "Contact"].map(
+            {["Home", "About", "Services", "Gallery"].map(
               (item, i) => (
                 <li key={i}>
-                  <Link
-                    href={`/${item.toLowerCase().replace(" ", "")}`}
+                  <button
+                    onClick={()=> ScrollToSection(item.toLowerCase().replace(" ", ""))}
                     className="hover:text-green-500 transition-all duration-300"
                   >
                     {item}
-                  </Link>
+                  </button>
                 </li>
               )
             )}
@@ -67,7 +73,7 @@ export default function Footer({ id }) {
                 href="mailto:info@healingnature.com"
                 className="hover:text-green-500 transition"
               >
-                info@healingnature.com
+                prachimahulkar08@gmail.com
               </a>
             </li>
             <li>
