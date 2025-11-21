@@ -12,6 +12,7 @@ import StatsCounter from '@/components/StatsCounter'
 import WhyChooseUs from '@/components/WhyChooseUs'
 import Gallery from '@/components/Gallery'
 import OurApproach from '@/components/OurApproach'
+import DiscoverPage from '@/components/DiscoverPage'
 export default function Home() {
   useEffect(() => {
     // Scroll to top on page load

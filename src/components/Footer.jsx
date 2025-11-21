@@ -104,17 +104,40 @@ export default function Footer({ id }) {
           </p>
 
           {/* Social Icons */}
-          <div className="flex space-x-4 mt-4">
-            {[Facebook, Twitter, Instagram, Linkedin].map((Icon, i) => (
-              <Link
-                key={i}
-                href="#"
-                className="p-2 rounded-full border border-gray-300 hover:border-green-500 hover:bg-green-50 hover:scale-110 transition-transform duration-300"
-              >
-                <Icon size={18} className="text-gray-700 hover:text-green-600" />
-              </Link>
-            ))}
-          </div>
+        <div className="flex space-x-4 mt-4">
+          {/* <Link
+            href="https://www.facebook.com/YOUR_PROFILE"
+            target="_blank"
+            className="p-2 rounded-full border border-gray-300 hover:border-green-500 hover:bg-green-50 hover:scale-110 transition-transform duration-300"
+          >
+            <Facebook size={18} className="text-gray-700 hover:text-green-600" />
+          </Link>
+
+          <Link
+            href="https://twitter.com/YOUR_PROFILE"
+            target="_blank"
+            className="p-2 rounded-full border border-gray-300 hover:border-green-500 hover:bg-green-50 hover:scale-110 transition-transform duration-300"
+          >
+            <Twitter size={18} className="text-gray-700 hover:text-green-600" />
+          </Link> */}
+
+          <Link
+            href="https://www.instagram.com/drprachi8198?igsh=MTUwcTIxN25kYTBvMA=="
+            target="_blank"
+            className="p-2 rounded-full border border-gray-300 hover:border-green-500 hover:bg-green-50 hover:scale-110 transition-transform duration-300"
+          >
+            <Instagram size={18} className="text-gray-700 hover:text-green-600" />
+          </Link>
+
+          {/* <Link
+            href="https://www.linkedin.com/in/YOUR_PROFILE"
+            target="_blank"
+            className="p-2 rounded-full border border-gray-300 hover:border-green-500 hover:bg-green-50 hover:scale-110 transition-transform duration-300"
+          >
+            <Linkedin size={18} className="text-gray-700 hover:text-green-600" />
+          </Link> */}
+        </div>
+
         </div>
       </div>
 
