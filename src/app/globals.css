@@ -123,9 +123,20 @@
   }
 }
 
+/* spacing */
 .slick-slide > div {
   margin: 0 8px;
 }
-.slick-list {
-  padding: 0 10px;
+
+/* Responsive fix */
+@media (max-width: 768px) {
+  .slick-track {
+    display: flex !important;
+  }
+  .slick-slide {
+    width: 100% !important;
+  }
+  .slick-list {
+    padding: 0 4px !important;
+  }
 }
