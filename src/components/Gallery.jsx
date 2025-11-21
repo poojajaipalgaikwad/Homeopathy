@@ -7,9 +7,7 @@ const images = [
     assets.patient1,
     assets.patient2,
     assets.patient3,
-    assets.patient4,
-    assets.patient5,
-    assets.patient6
+    assets.patient5
 ];
 
 export default function Gallery({ id }) {

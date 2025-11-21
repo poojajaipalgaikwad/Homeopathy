@@ -122,3 +122,10 @@
     @apply bg-background text-foreground;
   }
 }
+
+.slick-slide > div {
+  margin: 0 8px;
+}
+.slick-list {
+  padding: 0 10px;
+}

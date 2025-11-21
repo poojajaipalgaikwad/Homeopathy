@@ -119,7 +119,6 @@ export default function ContactForm() {
               value={form.email}
               onChange={handleChange}
               className="p-3 border rounded-lg focus:ring-2 focus:ring-green-400 outline-none"
-              required
             />
             <input
               type="text"
@@ -128,6 +127,7 @@ export default function ContactForm() {
               value={form.subject}
               onChange={handleChange}
               className="p-3 border rounded-lg focus:ring-2 focus:ring-green-400 outline-none"
+              required
             />
             <textarea
               name="message"
@@ -136,7 +136,6 @@ export default function ContactForm() {
               onChange={handleChange}
               rows={5}
               className="p-3 border rounded-lg focus:ring-2 focus:ring-green-400 outline-none"
-              required
             ></textarea>
 
             <button
@@ -148,7 +147,7 @@ export default function ContactForm() {
             </button>
 
             <a
-              href="https://wa.me/919876543210"
+              href="https://wa.me/919503768159"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 border-2 border-green-600 text-green-700 py-3 rounded-lg font-semibold hover:bg-green-600 hover:text-white transition transform hover:scale-105"
@@ -185,7 +184,7 @@ export default function ContactForm() {
             </p>
             <p className="flex items-center gap-3">
               <FaPhoneAlt className="text-green-600 text-xl" />
-              <a href="tel:+919876543210" className="hover:underline">
+              <a href="tel:+919503768159" className="hover:underline">
                 +91 95037 68159
               </a>
             </p>
