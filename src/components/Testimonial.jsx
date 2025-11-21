@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import testimonial from "../../assets/testimonial.json";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -18,12 +17,6 @@ const settings = {
   slidesToScroll: 1,
   responsive: [
     {
-      breakpoint: 1280,
-      settings: {
-        slidesToShow: 3,
-      },
-    },
-    {
       breakpoint: 1024,
       settings: {
         slidesToShow: 2,
@@ -40,25 +33,23 @@ const settings = {
 
 export default function Testimonial({ id }) {
   return (
-    <section
-      id={id}
-      className="py-12 md:py-20 flex flex-col justify-center items-center bg-white"
-    >
+    <section id={id} className="py-12 md:py-20 flex flex-col justify-center items-center bg-white">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-3xl font-bold text-gray-700 mb-3 uppercase">
           Testimonials{" "}
           <span className="inline-block bg-green-400 w-40 h-1 ml-2 align-middle"></span>
         </h2>
         <p className="text-xl md:text-base max-w-2xl mx-auto text-gray-500">
-          🌿 From chronic pain to renewed comfort — our patients share their healing journeys. 💙 Their words inspire us to continue delivering care with empathy and excellence.
+          🌿 From chronic pain to renewed comfort — our patients share their healing journeys. 💙
         </p>
       </div>
 
-      <div className="w-full max-w-7xl mx-auto px-3 sm:px-6 md:px-10 py-10">
+      <div className="w-full max-w-7xl mx-auto px-2 sm:px-4 md:px-10 py-10">
         <Slider {...settings}>
           {testimonial.map((tm, i) => (
-            <aside key={i} className="p-2 sm:p-4 w-full">
+            <aside key={i} className="p-1 sm:p-3 w-full">
               <div className="p-6 sm:p-8 rounded-xl bg-gradient-to-r from-emerald-200 to-teal-300 shadow-md flex flex-col justify-between items-center h-full transition-transform hover:scale-[1.02] duration-300">
+                
                 {/* Quotes Icon */}
                 <svg
                   viewBox="0 -0.5 17 17"
@@ -72,14 +63,10 @@ export default function Testimonial({ id }) {
                   </g>
                 </svg>
 
-                {/* Star Ratings */}
+                {/* Rating */}
                 <div className="flex justify-center mb-4 mt-3">
                   {[...Array(5)].map((_, index) => (
-                    <Star
-                      key={index}
-                      size={18}
-                      className="text-yellow-400 fill-yellow-400 mx-0.5"
-                    />
+                    <Star key={index} size={18} className="text-yellow-400 fill-yellow-400 mx-0.5" />
                   ))}
                 </div>
 
