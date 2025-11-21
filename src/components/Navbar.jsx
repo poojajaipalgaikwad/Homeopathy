@@ -86,9 +86,9 @@ const Navbar = () => {
 
         {/* ✅ Right Buttons */}
         <div className='flex items-center gap-4'>
-          <button>
+          {/* <button>
             <Image src={assets.MoonIcon} alt='' className='w-6' />
-          </button>
+          </button> */}
 
           {/* ✅ Book Appointment redirects to contact page */}
           <Link

@@ -11,6 +11,7 @@ import patient3 from './patient3.jpg'
 import patient4 from './patient4.jpeg'
 import patient5 from './patient5.jpg'
 import patient6 from './patient6.jpg'
+import patient7 from './patient7.jpg'
 import Services from './Services.png'
 import Womenswellness from './Womens wellness.png'
 import chronicDesease from './chronic deases.png'
@@ -45,6 +46,7 @@ export const assets = {
     patient4 : patient4,
     patient5 : patient5,
     patient6 : patient6,
+    patient7 : patient7,
     services : Services,
     womenswellness : Womenswellness,
     acuteFamily : actuteFamily,
