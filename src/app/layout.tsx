@@ -30,7 +30,7 @@ export default function RootLayout({
         <link rel="icon" type="image/x-icon" href="/favicon.png"></link>
       </head>
       <body
-        className={`${outfit.className} ${ovo.className} antialiased`}
+        className={`${outfit.className} ${ovo.className} antialiased ` }
       >
         <ThemeProvider
           attribute="class"
